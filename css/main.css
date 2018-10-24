@@ -11,7 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
   margin: 0;
-  height: 100%;
+  width: 100%;
 }
 
 ::-moz-selection {
@@ -33,33 +33,28 @@ hr {
   padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * 
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+div {
+  padding-bottom: 50px;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+.container {
+  
+display: grid;
+grid-template-columns: 8% 24% 6% 10% 4% 6% 4% 6% 24% 8%; 
+grid-template-rows: repeat(10, auto);
+grid-template-areas:
+'. what-we-fund what-we-fund . . . . . . .'
+'. block-1 block-1 block-1 . block-2 block-2 block-2 block-2 .'
+'. . . . . . . . . .'
+'. our-mission our-mission our-mission . . our-mission-img our-mission-img our-mission-img .'
+'. . . . . . . . . .'
+'. communities communities communities . . . . . .'
+'. block-3 . block-4 block-4 block-4 block-4 . block-5 .'
+'. . . . . . . . . .'
+'. technologies technologies technologies . . . . . .'
+'. block-6 . block-7 block-7 block-7 block-7 . block-8 .';
 }
 
-main {
-  flex: 1;
-  overflow: auto;
-}
 
 /* The hero image */
 .hero-image {
@@ -74,8 +69,10 @@ main {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0 8%;
   align-items: center;
+  text-align: right;
   height: 64px;
 }
 
@@ -88,6 +85,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 8%;
   height: 64px;
 }
 
@@ -95,29 +93,73 @@ footer {
   font-weight: 500;
   color: #222;
   text-decoration: none;
+  
 }
 
 /* ==========================================================================
   Add your CSS here 
    ========================================================================== */
 
-section {
-  height: 300px;
-  overflow: auto;
-  border-bottom: 2px solid;
-  background: lightpink;
+
+.wwf {
+  grid-area: what-we-fund;
 }
 
+.article {
+  background-color: #83AFED;
+}
 
+.block-1 {
+  grid-area: block-1;
+}
 
+.block-2 {
+  grid-area: block-2;
+}
 
+.our-mission {
+  grid-area: our-mission;
+}
 
+.our-mission-img {
+  grid-area: our-mission-img;
+}
 
+img {
+  width: 100%;
+}
 
+.communities {
+  grid-area: communities;
+}
 
+.block-3 {
+  grid-area: block-3;
+}
 
+.block-4 {
+  grid-area: block-4;
+}
 
+.block-5 {
+  grid-area: block-5;
+}
 
+.technologies {
+  grid-area: technologies;
+}
+
+.block-6 {
+  grid-area: block-6;
+}
+
+.block-7 {
+  grid-area: block-7;
+}
+
+.block-8 {
+  grid-area: block-8;
+}
 
 
 /* ========================================================================== ========================================================================== */
