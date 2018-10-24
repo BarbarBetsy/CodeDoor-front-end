@@ -24,15 +24,6 @@ body {
   text-shadow: none;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
 div {
   padding-bottom: 50px;
 }
@@ -41,16 +32,13 @@ div {
   
 display: grid;
 grid-template-columns: 8% 24% 6% 10% 4% 6% 4% 6% 24% 8%; 
-grid-template-rows: repeat(10, auto);
+grid-template-rows: repeat(7, auto);
 grid-template-areas:
 '. what-we-fund what-we-fund . . . . . . .'
 '. block-1 block-1 block-1 . block-2 block-2 block-2 block-2 .'
-'. . . . . . . . . .'
 '. our-mission our-mission our-mission . . our-mission-img our-mission-img our-mission-img .'
-'. . . . . . . . . .'
 '. communities communities communities . . . . . .'
 '. block-3 . block-4 block-4 block-4 block-4 . block-5 .'
-'. . . . . . . . . .'
 '. technologies technologies technologies . . . . . .'
 '. block-6 . block-7 block-7 block-7 block-7 . block-8 .';
 }
@@ -58,12 +46,27 @@ grid-template-areas:
 
 /* The hero image */
 .hero-image {
-  margin: 0 0;
   background-image: url("../img/hero-beach.jpg");
   height: 480px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+h1 {
+  margin-left: 8%;
+  margin-top: 8%;
+  position: absolute; 
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 2em 0 0 0;
+}
+
+mark {
+  background-color: white;
+  padding: 4px 5px;
 }
 
 header {
@@ -100,7 +103,6 @@ footer {
   Add your CSS here 
    ========================================================================== */
 
-
 .wwf {
   grid-area: what-we-fund;
 }
@@ -113,8 +115,20 @@ footer {
   grid-area: block-1;
 }
 
+.block-1 h4 {
+  background-color: #F2C94C;
+  padding: 4em 15px 1em 15px;
+  margin: 0; 
+}
+
 .block-2 {
   grid-area: block-2;
+}
+
+.block-2 h4 {
+  background-color: #83AFED;
+  padding: 4em 15px 1em 15px;
+  margin: 0; 
 }
 
 .our-mission {
@@ -159,6 +173,24 @@ img {
 
 .block-8 {
   grid-area: block-8;
+}
+
+.button-small {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+.button-wide {
+width: 100%;
+border: none;
+background-color: black;
+color: white;
+text-align: left;
+padding: 10px 15px;
+text-transform: uppercase;
 }
 
 
