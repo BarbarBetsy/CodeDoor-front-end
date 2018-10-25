@@ -24,11 +24,7 @@ body {
   text-shadow: none;
 }
 
-div {
-  padding-bottom: 50px;
-}
-
-/* HEADER */
+/* header */
 header {
   display: flex;
   align-items: center;
@@ -47,7 +43,7 @@ header {
   margin-left: auto;
 }
 
-/* FOOTER */
+/* footer */
 footer {
   display: flex;
   align-items: center;
@@ -85,6 +81,21 @@ footer nav {
   position: relative;
 }
 
+mark {
+  background-color: white;
+  padding: 6px 6px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 8%;
+  margin-top: 6%;
+  position: absolute; 
+}
+
+
+/* grid container */
 .container {
   display: grid;
   grid-template-columns: 8% 24% 6% 10% 4% 6% 4% 6% 24% 8%; 
@@ -99,33 +110,72 @@ footer nav {
   '. block-6 . block-7 block-7 block-7 block-7 . block-8 .';
   }
 
-h1 {
-  font-size: 40px;
-  margin-left: 8%;
-  margin-top: 6%;
-  position: absolute; 
-}
+/* grid content */
+
+/* allgemein */
+div {
+  padding-bottom: 50px;
+}  
 
 h2 {
+    text-transform: uppercase;
+    margin: 2em 0 0 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  h3 {
+  font-size: 24px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 2em 0 0 0;
-}
+  }
 
-mark {
-  background-color: white;
-  padding: 4px 5px;
-}
+  h4 {
+    font-size: 24px;
+    padding: 0 15px;
+  }
 
-/* ==========================================================================
-  Add your CSS here 
-   ========================================================================== */
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(121, 120, 120);
+    padding: 0 15px;
+    letter-spacing: 1px;
+  }
 
+  p {
+    font-size: 24px;
+  }
+
+  .article-blue {
+    background-color: #83AFED;
+  }
+
+  .article-yellow {
+    background-color: #F2C94C;
+  }
+
+  .button-small {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0 25px;
+  }
+  
+  .button-wide {
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding-left: 15px;
+  
+  }
+
+/* what we fund */
 .wwf {
   grid-area: what-we-fund;
-}
-
-.article {
-  background-color: #83AFED;
 }
 
 .block-1 {
@@ -148,6 +198,7 @@ mark {
   margin: 0; 
 }
 
+/* our mission */
 .our-mission {
   grid-area: our-mission;
 }
@@ -160,6 +211,7 @@ img {
   width: 100%;
 }
 
+/* communities */
 .communities {
   grid-area: communities;
 }
@@ -176,6 +228,7 @@ img {
   grid-area: block-5;
 }
 
+/* technologies */
 .technologies {
   grid-area: technologies;
 }
@@ -192,23 +245,7 @@ img {
   grid-area: block-8;
 }
 
-.button-small {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  text-transform: uppercase;
-}
 
-.button-wide {
-width: 100%;
-border: none;
-background-color: black;
-color: white;
-text-align: left;
-padding: 10px 15px;
-text-transform: uppercase;
-}
 
 
 /* ========================================================================== ========================================================================== */
