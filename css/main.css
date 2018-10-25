@@ -113,6 +113,7 @@ h1 {
 /* grid content */
 
 /* allgemein */
+
 div {
   padding-bottom: 50px;
 }  
@@ -161,6 +162,7 @@ h2 {
     color: white;
     border: none;
     padding: 0 25px;
+    margin: 25px 0 50px 0;
   }
   
   .button-wide {
@@ -201,10 +203,16 @@ h2 {
 /* our mission */
 .our-mission {
   grid-area: our-mission;
+  margin-top: 40px;
+}
+
+.our-mission h2 {
+  margin-top: 0;
 }
 
 .our-mission-img {
   grid-area: our-mission-img;
+  margin-top: 50px;
 }
 
 img {
