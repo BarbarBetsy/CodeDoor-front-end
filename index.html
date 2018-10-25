@@ -23,13 +23,19 @@
 <body>
   
     <header class="ph4">
-      <img class="header__logo" src="./img/bf_logo.svg" alt="Banana Foundation Logo">
-      <i class="fas fa-bars fa-lg"></i>
+      <a href="#hero-image"><img class="header__logo" src="./img/bf_logo.svg" alt="Banana Foundation Logo"></a>
+      <i onclick="myFunction()" class="fas fa-bars fa-lg"></i>
+      <ul id="menu">
+        <a onclick="myFunctionClose()" href="#wwf"><li>What we fund</li></a>
+        <a onclick="myFunctionClose()" href="#our-mission"><li>our mission</li></a>
+        <a onclick="myFunctionClose()" href="#communities"><li>Communities</li></a>
+        <a onclick="myFunctionClose()" href="#technologies"><li>technologies</li></a>
+      </ul>
     </header>
     
 <!-- Add your site or application content here -->
     <main>
-      <section class="hero-image">
+      <section id="hero-image" class="hero-image">
       <h1><mark> Banana </mark><br>
       <mark> Foundation Grant </mark><br>
       <mark> Award </mark><br>
@@ -40,20 +46,20 @@
       
 <div class="container">      
 <!-- What we fund -->
-<div class="wwf"><H2>What we fund</H2></div>
+<div id="wwf" class="wwf"><H2>What we fund</H2></div>
         <div class="block-1"><h6>Communites</h6>
-        <button class="button-wide"><h3>Learn More</h3></button>
+        <a href="#communities" class="button-wide"><h3>Learn More</h3></a>
         </div>
 
         <div class="block-2"><h6>Technologies</h6>
-          <button class="button-wide"><h3>Learn More</h3></button>
+          <a href="#technologies" class="button-wide"><h3>Learn More</h3></a>
           </div>
 
 <!--Linie-->
  <div class="vl"></div>         
             
 <!-- Our mission -->
-      <div class="our-mission"><h2>Our Mission</h2>
+      <div id="our-mission" class="our-mission"><h2>Our Mission</h2>
       <p>Banana Foundation is an international foundation with strong local roots. We invest in communities, and new technologies. Our goal is to foster informed and engaged communities, which we believe are essential for a healthy bananas.</p></div>
       <div class="our-mission-img"><img src="img/mission-group-img.jpg" alt="three happy people jumping in the air"></div>
 
@@ -61,7 +67,7 @@
 <div class="vl2"></div>
       
 <!-- Communities -->
-      <div class="communities"><h2>Communites</h2>
+      <div id="communities" class="communities"><h2>Communites</h2>
       <p>It is important to shape up your hedges, it's like getting a haircut, stay fresh.</p>
       <button class="button-small"><h3>Learn More</h3></button>
       </div>
@@ -86,7 +92,7 @@
 <div class="vl3"></div>
 
 <!-- Technologies -->
-      <div class="technologies"><h2>Technologies</h2>
+      <div id="technologies" class="technologies"><h2>Technologies</h2>
         <p>It is important to shape up your hedges, it's like getting a haircut, stay fresh.</p>
         <button class="button-small"><h3>Learn More</h3></button>
       </div>
@@ -117,9 +123,9 @@
         </nav>
         <div>
           <i class="fab fa-facebook-square fa-2x"></i>
-          <i class="pl3 fab fa-twitter-square fa-2x"></i>
-          <i class="pl3 fab fa-instagram fa-2x"></i>
-          <i class="pl3 fab fa-youtube-square fa-2x"></i>
+          <a href="https://twitter.com/banana?lang=de" target="_blank"><i class="pl3 fab fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/explore/tags/banana/" target="_blank"><i class="pl3 fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.youtube.com/watch?v=sFukyIIM1XI" target="_blank"><i class="pl3 fab fa-youtube-square fa-2x"></i></a>
         </div>
       </footer>
     </main>

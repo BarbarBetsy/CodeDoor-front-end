@@ -24,6 +24,10 @@ body {
   text-shadow: none;
 }
 
+.header_logo, li, .button, .fa-bars, #menu {
+  transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;
+}
+
 /* header */
 header {
   display: flex;
@@ -39,13 +43,56 @@ header {
   height: 32px;
   width: auto;
   padding: 0;
-  margin-left: 6%;
+  margin-left: 31%;
 }
 
 .fa-bars {
   height: 32px;
   margin-right: 10.5%;
   margin-left: auto;
+}
+
+/* Hamburger menu */
+header .fa-bars:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#menu {
+  position: absolute;
+  width: 100px;
+  margin-top: 25%;
+  margin-left: 100%;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  list-style-type: none;
+}
+
+#menu.open {
+  position: absolute;
+  width: 300px;
+  margin-top: 25%;
+  margin-left: 70%;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  list-style-type: none;
+}
+
+#menu li{
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 22px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+ color: black;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 /* footer */
@@ -158,6 +205,7 @@ h2 {
   font-size: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   }
 
   h4 {
@@ -211,14 +259,15 @@ h2 {
     margin: 25px 0 50px 0;
   }
   
-  .button-wide {
-  width: 100%;
-  border: none;
-  background-color: black;
+  .button-wide{
+    width: 100%;
   color: white;
-  text-align: left;
-  padding-left: 15px;
-  
+  }
+
+  .button-wide h3 {
+    background-color: black;
+    padding: 15px 20px;
+    margin-top: 0;
   }
 
 /* what we fund */
@@ -249,7 +298,7 @@ h2 {
 /* our mission */
 .our-mission {
   grid-area: our-mission;
-  margin-top: 40px;
+  padding-top: 70px;
 }
 
 .our-mission h2 {
@@ -258,7 +307,7 @@ h2 {
 
 .our-mission-img {
   grid-area: our-mission-img;
-  margin-top: 50px;
+  padding-top: 70px;
 }
 
 img {
