@@ -29,17 +29,22 @@ header {
   display: flex;
   align-items: center;
   height: 64px;
-  margin: 0 6%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
 }
 
 .header__logo {
   height: 32px;
   width: auto;
   padding: 0;
+  margin-left: 6%;
 }
 
 .fa-bars {
   height: 32px;
+  margin-right: 10.5%;
   margin-left: auto;
 }
 
@@ -78,19 +83,19 @@ footer nav {
   height: 480px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  padding-top: 64px;
 }
 
 mark {
   background-color: white;
-  padding: 6px 6px;
+  padding: 6px;
 }
 
 h1 {
   font-size: 48px;
   font-weight: 700;
   margin-left: 8%;
-  margin-top: 6%;
+  margin-top: 5%;
   position: absolute; 
 }
 
