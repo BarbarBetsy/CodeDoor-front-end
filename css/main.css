@@ -28,21 +28,24 @@ div {
   padding-bottom: 50px;
 }
 
-.container {
-  
-display: grid;
-grid-template-columns: 8% 24% 6% 10% 4% 6% 4% 6% 24% 8%; 
-grid-template-rows: repeat(7, auto);
-grid-template-areas:
-'. what-we-fund what-we-fund . . . . . . .'
-'. block-1 block-1 block-1 . block-2 block-2 block-2 block-2 .'
-'. our-mission our-mission our-mission . . our-mission-img our-mission-img our-mission-img .'
-'. communities communities communities . . . . . .'
-'. block-3 . block-4 block-4 block-4 block-4 . block-5 .'
-'. technologies technologies technologies . . . . . .'
-'. block-6 . block-7 block-7 block-7 block-7 . block-8 .';
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin: 0 6%;
 }
 
+.header__logo {
+  height: 32px;
+  width: auto;
+  padding: 0;
+}
+
+.fa-bars {
+  height: 32px;
+  margin-left: auto;
+}
 
 /* The hero image */
 .hero-image {
@@ -53,9 +56,24 @@ grid-template-areas:
   position: relative;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 8% 24% 6% 10% 4% 6% 4% 6% 24% 8%; 
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+  '. what-we-fund what-we-fund . . . . . . .'
+  '. block-1 block-1 block-1 . block-2 block-2 block-2 block-2 .'
+  '. our-mission our-mission our-mission . . our-mission-img our-mission-img our-mission-img .'
+  '. communities communities communities . . . . . .'
+  '. block-3 . block-4 block-4 block-4 block-4 . block-5 .'
+  '. technologies technologies technologies . . . . . .'
+  '. block-6 . block-7 block-7 block-7 block-7 . block-8 .';
+  }
+
 h1 {
+  font-size: 40px;
   margin-left: 8%;
-  margin-top: 8%;
+  margin-top: 6%;
   position: absolute; 
 }
 
@@ -69,19 +87,7 @@ mark {
   padding: 4px 5px;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 8%;
-  align-items: center;
-  text-align: right;
-  height: 64px;
-}
 
-.header__logo {
-  height: 32px;
-}
 
 footer {
   display: flex;
