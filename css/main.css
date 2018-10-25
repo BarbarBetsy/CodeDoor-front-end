@@ -99,13 +99,16 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: 8% 24% 6% 10% 4% 6% 4% 6% 24% 8%; 
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(10, auto);
   grid-template-areas:
   '. what-we-fund what-we-fund . . . . . . .'
   '. block-1 block-1 block-1 . block-2 block-2 block-2 block-2 .'
+  '. vl vl vl vl vl vl vl vl .'
   '. our-mission our-mission our-mission . . our-mission-img our-mission-img our-mission-img .'
+  '. vl2 vl2 vl2 vl2 vl2 vl2 vl2 vl2 .'
   '. communities communities communities . . . . . .'
   '. block-3 . block-4 block-4 block-4 block-4 . block-5 .'
+  '. vl3 vl3 vl3 vl3 vl3 vl3 vl3 vl3 .'
   '. technologies technologies technologies . . . . . .'
   '. block-6 . block-7 block-7 block-7 block-7 . block-8 .';
   }
@@ -113,6 +116,27 @@ h1 {
 /* grid content */
 
 /* allgemein */
+
+.vl {
+  background-color: black;
+  height: 2px;
+  padding: 0;
+  grid-area: vl;
+}
+
+.vl2 {
+  background-color: black;
+  height: 2px;
+  padding: 0;
+  grid-area: vl2;
+}
+
+.vl3 {
+  background-color: black;
+  height: 2px;
+  padding: 0;
+  grid-area: vl3;
+}
 
 div {
   padding-bottom: 50px;
@@ -167,6 +191,7 @@ h2 {
   .article-yellow {
     background-color: #F2C94C;
     padding-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .article-yellow img {
