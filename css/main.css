@@ -25,7 +25,7 @@ body {
 }
 
 .header_logo, li, .button, .fa-bars, #menu {
-  transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;
+  transition: all 400ms; -webkit-transition: all 400ms; -moz-transition: all 400ms; -o-transition: all 400ms;
 }
 
 /* header */
@@ -46,13 +46,13 @@ header {
   margin-left: 31%;
 }
 
+/* Hamburger menu */
 .fa-bars {
   height: 32px;
   margin-right: 10.5%;
   margin-left: auto;
 }
 
-/* Hamburger menu */
 header .fa-bars:hover {
   opacity: 0.5;
   cursor: pointer;
@@ -60,20 +60,19 @@ header .fa-bars:hover {
 
 #menu {
   position: absolute;
-  width: 100px;
-  margin-top: 25%;
-  margin-left: 100%;
-  padding: 50px;
+  width: 300px;
+  top: 65px;
+  left: 100%;
+  padding: 25px;
   background: rgba(255, 255, 255, 0.7);
   list-style-type: none;
 }
 
 #menu.open {
-  position: absolute;
-  width: 300px;
-  margin-top: 25%;
-  margin-left: 70%;
-  padding: 50px;
+  position: fixed;
+  top: 65px;
+  left: 70%;
+  padding: 25px;
   background: rgba(255, 255, 255, 0.7);
   list-style-type: none;
 }
@@ -235,6 +234,7 @@ h2 {
   .article-blue {
     background-color: #83AFED;
     padding-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .article-blue img {
@@ -348,7 +348,137 @@ img {
   grid-area: block-8;
 }
 
+@media only screen and (max-width: 667px) {
 
+  html,
+  body {
+    font-size: 0.5em;
+  }
+
+  /* The hero image */
+.hero-image {
+  height: 200px;
+}
+
+h1 {
+  font-size: 24px; 
+}
+
+  h2 {
+    font-size: 22px;
+    margin: 10% 0 10% 0;
+  }
+
+  h3 {
+  font-size: 18px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+
+/* grid container */
+.container {
+  display: grid;
+  grid-template-columns: 5% 90% 5%; 
+  grid-template-rows: repeat(14, auto);
+  grid-template-areas:
+  '. what-we-fund .'
+  '. block-1 .'
+  '. block-2 .'
+  '. our-mission .'
+  '. our-mission-img .'
+  '. communities .'
+  '. block-3 .' 
+  '. block-4 .'
+  '. block-4 .'
+  '. block-5 .'
+  '. technologies .'
+  '. block-6 .'
+  '. block-7 .'
+  '. block-8 .';
+  }
+
+  #wwf, #communities, #technologies {
+    padding-top: 40px;
+  }
+
+  .our-mission-img {
+    padding-top: 40px;
+  }
+
+/* header */
+.header__logo {
+  height: 20px;
+  margin-left: 5%;
+}
+
+/* Hamburger menu */
+.fa-bars {
+  font-size: 18px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+#menu {
+  position: absolute;
+  height: auto; 
+  margin: 0;
+  top: 60px;
+  left: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5%;
+}
+
+#menu.open {
+position: absolute;
+height: auto; 
+margin: 0;
+top: 60px;
+left: 50%;
+padding-top: 0;
+padding-bottom: 0;
+padding-left: 5%;
+}
+
+#menu li{
+  font-size: 15px;
+}
+
+  /* footer */
+  footer {
+    font-size: 3em;
+    margin: 0 5%;
+  }
+  
+  footer div {
+    width: auto;
+    padding-top: 0px;
+    margin-left: auto;
+   margin-top: -20px;
+  }
+  
+div {
+  padding-bottom: 0px;
+} 
+  
+}
 
 
 /* ========================================================================== ========================================================================== */
