@@ -348,6 +348,107 @@ img {
   grid-area: block-8;
 }
 
+@media only screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 0.5em;
+  }
+
+  /* The hero image */
+.hero-image {
+  height: 250px;
+}
+
+h1 {
+  font-size: 24px; 
+}
+
+  h2 {
+    font-size: 22px;
+    margin: 20% 0 5% 0;
+  }
+
+  h3 {
+  font-size: 18px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+
+/* grid container */
+.container {
+  grid-template-columns: 8% 40% 4% 40% 8%; 
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+  '. what-we-fund . . .'
+  '. block-1 . block-2 .'
+  '. our-mission our-mission our-mission .'
+  '. our-mission-img our-mission-img our-mission-img .'
+  '. communities . block-3 .' 
+  '. block-4 . block-5 .'
+  '. technologies . block-6 .'
+  '. block-7 . block-8 .';
+  }
+
+  .our-mission-img {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+/* header */
+.header__logo {
+  height: 24px;
+  margin-left: 24%;
+}
+
+/* Hamburger menu */
+.fa-bars {
+  font-size: 18px;
+}
+
+#menu {
+  top: 75px;
+}
+
+#menu.open {
+top: 75px;
+left: 70%;
+}
+
+#menu li{
+  font-size: 15px;
+}
+
+  /* footer */
+  footer {
+    font-size: 3em;
+    margin: 0 8%;
+  }
+  
+  footer div {
+   margin-top: -30px;
+  }
+  
+div {
+  padding-bottom: 0px;
+} 
+
+}
+
 @media only screen and (max-width: 667px) {
 
   html,
