@@ -19,16 +19,16 @@ You are to treat this challenge as if you are working as a front end developer a
 
 ## 	✅ Challenge
 
-- [ ] Build Homepage (**HTML/CSS**)
+- [x] Build Homepage (**HTML/CSS**)
     - [x] Header
-    - [ ] Hero Image
-    - [ ] What we fund
-    - [ ] Our Mission
-    - [ ] Communities
-    - [ ] Technologies
+    - [x] Hero Image
+    - [x] What we fund
+    - [x] Our Mission
+    - [x] Communities
+    - [x] Technologies
     - [x] Footer
 
-- [ ] Add a Hamburger Menu, which provides access to each section. (**JS**)
+- [x] Add a Hamburger Menu, which provides access to each section. (**JS**)
 
 - [ ] Banana Tax Calculator(**JS**) *Coming soon*
 
